@@ -1,82 +1,39 @@
-# Perplexity Space Context
+# Perplexity Space Context Orchestration
 
-**Context Engineering workspace for agentic pattern development**
+## Project Goal
+Provide a fast, modular orchestration layer for agentic pattern development, validation, migration, and collaborative context engineering using the ce-framework-meta as the foundation. Enable cyclic refinement, team-driven evolution, and seamless Perplexity Space integration.
+
+## Key Features
+- Wiring to meta framework for schemas, axioms, and validation
+- Organized patterns workspace by type (agentic, architectural, operational)
+- Work tracking by increment (cycles, PRP-based progress)
+- Artifacts and progress logs per cycle for auditability
+- Quick start and schema/axiom reference
+- Dedicated directory structure for modular expansion
+- Integration-ready for AI-powered test, validation, and release
 
 ## Architecture
 
-This repository serves as the **orchestration layer** for Context Engineering v2.0, integrating:
+This repository is the **orchestration layer** for Context Engineering v2.0, integrating:
 
-- **Meta Framework**: [ce-framework-meta](https://github.com/bprzybysz/ce-framework-meta) - Pattern schemas, ontology, validation
-- **Pattern Library**: Implementation patterns and templates
-- **Work Execution**: Active cycles, PRPs, and progress tracking
+- **Meta Framework:** [ce-framework-meta](https://github.com/bprzybysz/ce-framework-meta) — Pattern schemas, ontology, validation
+- **Pattern Library:** Implementation patterns and templates
+- **Work Execution:** Active cycles, PRPs, and progress tracking
 
-## Repository Structure
+## Recommendations from Cycle 1 Review
+- Add meta framework as a submodule for live schema sync
+- Automate progress and artifact logging (workflows)
+- Expand test coverage during Cycle 2
+- Document known limitations and troubleshooting
 
-```
-perplexity-space-context/
-├── meta/                    # Framework references
-│   ├── framework.md         # Link to ce-framework-meta
-│   └── schemas.md           # Quick schema reference
-├── patterns/                # Pattern implementations
-│   ├── agentic/            # Agentic workflow patterns
-│   ├── architectural/      # System architecture patterns
-│   └── operational/        # Operational patterns
-└── work/                    # Active execution
-    ├── cycle-1/            # Axiom Hardening (IN PROGRESS)
-    ├── cycle-2/            # Pattern Serialization (PLANNED)
-    ├── cycle-3/            # Complete Migration (PLANNED)
-    └── README.md           # Work tracking guide
-```
+## Usage
+1. Review meta framework, schemas, and axioms ([meta/](meta/), [ce-framework-meta](https://github.com/bprzybysz/ce-framework-meta))
+2. Commit new patterns or PRP executions to patterns/ and work/
+3. Validate using framework rules, track in cycle structure
+4. Collaborate through issues, PRs, and cycle documentation
 
-## Quick Start
-
-### Current Work: Cycle 1 - Axiom Hardening
-
-**Status:** Task 1 Complete ✅  
-**Next:** Update axioms and schemas
-
-See: [work/cycle-1/README.md](work/cycle-1/README.md)
-
-### Using the Framework
-
-1. **Review Meta Framework**
-   - Schemas: [ce-framework-meta/schemas](https://github.com/bprzybysz/ce-framework-meta/tree/main/schemas)
-   - Axioms: [ce-framework-meta/patterns/axioms-v1.yaml](https://github.com/bprzybysz/ce-framework-meta/blob/main/patterns/axioms-v1.yaml)
-
-2. **Execute PRPs**
-   - Current: [PRP-1: Axiom Hardening](https://github.com/bprzybysz/ce-framework-meta/blob/main/prps/PRP-1-axiom-hardening.md)
-   - Next: [PRP-2: Pattern Serialization](https://github.com/bprzybysz/ce-framework-meta/blob/main/prps/PRP-2-pattern-serialization.md)
-
-3. **Track Progress**
-   - See [work/cycle-1/progress.md](work/cycle-1/progress.md)
-
-## Principles
-
-- **KISS**: Keep patterns simple and essential
-- **SOLID**: Well-structured, composable patterns
-- **YAGNI**: Build only what's needed
-
-## Integration with Perplexity Space
-
-This repository aligns with **Context Engineering v2.0** Space:
-
-**Space Instructions:**
-```
-Context preprocessing agent.
-SOURCE: GitHub perplexity-space-context repo (meta/, patterns/, work/)
-PRINCIPLES: KISS, SOLID, YAGNI
-PROCESS: Review repo state → Apply validation → Generate next steps
-OUTPUT: Markdown with actionable tasks
-VALIDATE: ≤3 sentences, requirements mapped, testable
-```
-
-## Links
-
-- [Meta Framework Repository](https://github.com/bprzybysz/ce-framework-meta)
-- [Current Cycle Progress](work/cycle-1/README.md)
-- [Pattern Catalog](https://github.com/bprzybysz/ce-framework-meta/blob/main/patterns/catalog-draft.md)
+See [Current Progress](work/cycle-1/progress.md) for real-time updates and [IMPLEMENTATION-REVIEW-CYCLE-1.md](https://github.com/bprzybysz/ce-framework-meta/blob/main/docs/IMPLEMENTATION-REVIEW-CYCLE-1.md) for latest evaluation.
 
 ---
-
-**Version:** 0.1.0  
+**Version:** 1.0.1  
 **Last Updated:** 2025-11-13
